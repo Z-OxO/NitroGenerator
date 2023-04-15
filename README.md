@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1>Nitro Generator</h1>
     <p>A simple Python script that generates random Discord Nitro gift codes.</p>
     <h2>Usage</h2>
     <p>1. Install the required dependencies:</p>
