@@ -3,13 +3,15 @@ from colorama import *
 import string
 import random
 from time import *
+from banner import *
 
 codes_list = list(string.ascii_letters + string.digits)
 Fore.RESET
 
 
 def Generator():
-    print("\n")
+    for i in range(1, 9):
+        loading(banner_generator1, banner_generator2, banner_generator3)
     Fore.RESET
     valid_url = random.randint(1, 100)
     valid_test = -1
@@ -36,11 +38,12 @@ def Generator():
                 print(Fore.GREEN+"| "+url+" |")
                 file = os.path.join("hit.txt")
                 with open(file, "a+") as file_hit:
-                    file_hit.write("--->  ",url,"\n")
+                    file_hit.write("\n--->  "+url)
                     Fore.RESET
 
         
 def Menu():
+    print(Fore.MAGENTA+banner_main)
     choice = ""
     while choice not in ["1", "2", "3"]:
         print(Fore.WHITE+"["+Fore.CYAN+"1"+Fore.WHITE+"]"+Fore.CYAN+" Generator")
