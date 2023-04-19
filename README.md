@@ -14,8 +14,10 @@
     <code>pip install random</code>
     <br>
     <code>pip install time</code>
+    <br></br>
     <p>2. Run the script:</p>
     <code>python nitrogenerator.py</code>
+    <br></br>
     <p>3. Select an option from the menu:</p>
     <ul>
       <li>1: Generator - Generates Nitro gift codes</li>
