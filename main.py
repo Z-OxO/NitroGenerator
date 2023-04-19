@@ -31,6 +31,7 @@ def loading(image1, image2, image3):
 
 
 def Generator():
+    count_generator=0
     for i in range(1, 9):
         loading(banner_generator1, banner_generator2, banner_generator3)
     Fore.RESET
@@ -54,9 +55,10 @@ def Generator():
                 code = random.choice(codes_list)
                 codes += code
             url = "http://discord.gift/"+codes
-            print(Fore.CYAN+"| "+Fore.RED+url+Fore.CYAN+" |")
+            count_generator =+ 1
+            print(Fore.RED+"ERROR:404 "+Fore.RED+"--> "+Fore.LIGHTRED_EX+url+Fore.LIGHTRED_EX)
             if valid_test == valid_url:
-                print(Fore.GREEN+"| "+url+" |")
+                print(Fore.GREEN+"FOUND "+Fore.LIGHTGREEN_EX+"--> "+Fore.LIGHTGREEN_EX+url+Fore.LIGHTGREEN_EX)
                 file = os.path.join("hit.txt")
                 with open(file, "a+") as file_hit:
                     file_hit.write("\n--->  "+url)
