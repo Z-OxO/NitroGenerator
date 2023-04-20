@@ -12,22 +12,26 @@ Fore.RESET
 def loading(image1, image2, image3):
         if os.name == "posix":
             os.system("clear")
-        os.system("cls")
+        else:
+            os.system("cls")
         print(image1)
         sleep(0.3)
         if os.name == "posix":
             os.system("clear")
-        os.system("cls")
+        else:
+            os.system("cls")
         print(image2)
         sleep(0.3)
         if os.name == "posix":
             os.system("clear")
-        os.system("cls")
+        else:
+            os.system("cls")
         print(image3)
         sleep(0.3)
         if os.name == "posix":
             os.system("clear")
-        os.system("cls")
+        else:
+            os.system("cls")
 
 
 def Generator():
@@ -49,7 +53,7 @@ def Generator():
         for i in range(int(essay)):
             codes=""
             sleep(0.1)
-            valid_test = random.randint(1, 1000)
+            valid_test = random.randint(1, 1000) 
             #codes generation
             for i in range(17):
                 code = random.choice(codes_list)
