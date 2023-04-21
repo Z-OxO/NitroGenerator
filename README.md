@@ -9,14 +9,14 @@
     <p>A simple Python script that generates random Discord Nitro gift codes.</p>
     <h2>Usage</h2>
     <p>1. Install the required dependencies:</p>
-    <code>pip install colorama</code>
+    <pre><code>pip install colorama</code></pre>
     <br>
-    <code>pip install random</code>
+    <pre><code>pip install random</code></pre>
     <br>
-    <code>pip install time</code>
+    <pre><code>pip install time</code></pre>
     <br></br>
     <p>2. Run the script:</p>
-    <code>python nitrogenerator.py</code>
+    <pre><code>python nitrogenerator.py</code></pre>
     <br></br>
     <p>3. Select an option from the menu:</p>
     <ul>
